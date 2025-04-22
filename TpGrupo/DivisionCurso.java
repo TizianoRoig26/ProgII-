@@ -76,5 +76,4 @@ public class DivisionCurso {
         return mejorAlumno;
     }
 
-
 }

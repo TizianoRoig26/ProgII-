@@ -52,7 +52,7 @@ public class Alumno {
     }
 
     public Nota mejorNota(Integer codigoCatedra){
-        Nota mejorNota = new Nota();
+        Nota mejorNota = null;
         for (Nota nota : notas){
             if (nota.isEsRecuperatorio())continue;
             if(codigoCatedra != null && nota.getCatedra().getCodigo() != codigoCatedra)continue;

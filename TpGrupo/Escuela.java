@@ -62,9 +62,7 @@ public class Escuela {
 
         for (Alumno alumno : alumnos) {
             if (alumno.getFechaDeNacimiento().equals(convertirAnioADate(anioNacimientoAlumno)) && todasLasNotasAprobadas(alumno)) {
-                for (Nota nota : alumno.getNotas()) {
-                       mejoresAlumnos.add(alumno);
-                }
+                mejoresAlumnos.add(alumno);
             }
         }
         Collections.sort(mejoresAlumnos, Collections.reverseOrder());
